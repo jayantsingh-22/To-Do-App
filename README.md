@@ -29,8 +29,8 @@ This is a simple To-Do List application that allows users to manage their tasks.
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/jayantsingh-22/To-Do-App.git
+    cd To-Do-App
     ```
 
 2. Install backend dependencies:
