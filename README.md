@@ -1,4 +1,3 @@
-```markdown
 # To-Do List Application
 
 This is a simple To-Do List application that allows users to manage their tasks. The application supports creating, reading, updating, and deleting (CRUD) tasks. Each task has a title, description, status (e.g., pending, in-progress, completed), and due date.
@@ -100,4 +99,3 @@ Custom CSS is used to enhance the appearance of the application. Task statuses a
 ## License
 
 This project is licensed under the MIT License.
-```
