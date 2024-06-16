@@ -35,13 +35,13 @@ This is a simple To-Do List application that allows users to manage their tasks.
 2. Install backend dependencies:
     ```bash
     cd backend
-    npm install
+    pnpm install
     ```
 
 3. Install frontend dependencies:
     ```bash
     cd ../frontend
-    npm install
+    pnpm install
     ```
 
 4. Create a `.env` file in the root of the frontend directory and add the following:
@@ -56,13 +56,13 @@ This is a simple To-Do List application that allows users to manage their tasks.
 1. Start the backend server:
     ```bash
     cd backend
-    node index.js
+    pnpm start
     ```
 
 2. Start the frontend development server:
     ```bash
     cd ../frontend
-    npm start
+    pnpm start
     ```
 
 3. Open your browser and navigate to `http://<your-machine-ip>:3000`.
