@@ -2,7 +2,7 @@ const REACT_APP_API_URL = process.env.REACT_APP_API_URL;
 
 export const getTasks = async () => {
   try {
-    const response = await fetch(REACT_APP_API_URL);
+    const response = await fetch(`${REACT_APP_API_URL}/tasks`);
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
@@ -15,7 +15,7 @@ export const getTasks = async () => {
 
 export const getTask = async (id) => {
   try {
-    const response = await fetch(`${REACT_APP_API_URL}/${id}`);
+    const response = await fetch(`${REACT_APP_API_URL}/tasks/${id}`);
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
@@ -29,7 +29,7 @@ export const getTask = async (id) => {
 export const createTask = async (task) => {
   console.log("REACT_APP_API_URL", REACT_APP_API_URL);
   try {
-    const response = await fetch(REACT_APP_API_URL, {
+    const response = await fetch(`${REACT_APP_API_URL}/tasks`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(task),
@@ -46,7 +46,7 @@ export const createTask = async (task) => {
 
 export const updateTask = async (id, task) => {
   try {
-    const response = await fetch(`${REACT_APP_API_URL}/${id}`, {
+    const response = await fetch(`${REACT_APP_API_URL}/tasks/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(task),
@@ -63,7 +63,7 @@ export const updateTask = async (id, task) => {
 
 export const deleteTask = async (id) => {
   try {
-    const response = await fetch(`${REACT_APP_API_URL}/${id}`, {
+    const response = await fetch(`${REACT_APP_API_URL}/tasks/${id}`, {
       method: "DELETE",
     });
     if (!response.ok) {
