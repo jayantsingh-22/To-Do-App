@@ -11,5 +11,5 @@ app.use(bodyParser.json());
 app.use('/tasks', tasksRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
